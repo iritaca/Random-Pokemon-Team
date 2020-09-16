@@ -1,16 +1,7 @@
-const API ="https://pokeapi.co/api/v2/pokemon/99";
-// const API ="https://pokeapi.co/api/v2/pokemon/";
+import numeroRandom from '../utils/generateRandom';
+// const API ="https://pokeapi.co/api/v2/pokemon/565";
+const API ="https://pokeapi.co/api/v2/pokemon/";
 // const pokemon_URL = "/:id"
-
-// const maxCount = 999;
-// let generarSet =[]
-// const numeroRandom= () =>{
-//     for(i=0;i<6;i++){
-//         let rand=Math.floor(Math.random()*(maxCount-1)+1)
-//         generarSet.push(rand)
-//     }
-//     console.log(generarSet)
-// }
 
 // const getData = async() =>{
 //     try{
@@ -22,9 +13,12 @@ const API ="https://pokeapi.co/api/v2/pokemon/99";
 //         console.log('Fetch Error', error);
 //     }
 // }
-
-const getData = async (id) =>{
-    const apiURL = id?`${API}${id}`:API;
+const randomApi=`${API}${numeroRandom()}`
+debugger
+const getData = async () =>{
+    // debugger
+    // const apiURL = id?`${API}${id}`:API;
+    const apiURL = randomApi;
     try{
         const response = await fetch(apiURL)
         const data = await response.json();
