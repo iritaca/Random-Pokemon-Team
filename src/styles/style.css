@@ -12,7 +12,7 @@ body{
 }
 .Header-logo a{
     text-decoration:none;
-    color:#15302C;
+    color:#fff;
     border-radius:3px;
     padding:10px;
 }
@@ -21,18 +21,14 @@ body{
     justify-content: center;
 }
 .button{
-    width:100px;
     margin:0 auto;
     padding:10px;
     border-radius:10px;
     border:none;
     background-color: #a6e04b ;
-    color:#fff;
     box-shadow: -1px 1px 13px 0px rgba(181, 181, 181,0.6);
     cursor: pointer;
     outline: none;
-    position: absolute;
-    z-index: 2;
 }
 .content{
     /* border:1px solid red; */
@@ -42,9 +38,7 @@ body{
     display: none;
     
 }
-.loading{
-    /* display:none; */
-}
+
 .content.up{
     display:grid;
     grid-template-columns:repeat(3,30%);
