@@ -3,7 +3,7 @@ const Header = () =>{
         <div class="Header-main">
             <div class="Header-logo">
                 <h1>
-                    <a href="/">Random Pokemon Team</a>
+                    <a href="/" class="button">Random Pokemon Team</a>
                 </h1>
             </div>
         </div>

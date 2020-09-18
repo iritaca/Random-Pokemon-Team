@@ -12,13 +12,15 @@ const routes ={
 }
 const router = async () =>{
     const header = null || document.getElementById('header');
-    const loading = null || document.getElementById('loading');
+    const loadingUp = null || document.getElementById('loadingUp');
+    const loadingDown = null || document.getElementById('loadingDown');
     const footer = null || document.getElementById("footer");
     header.innerHTML = await Header();
     let hash = getHash();
     let route= await resolveRoutes(hash);
     let render = routes[route]?routes[route]: Error404;
-    // loading.innerHTML=await render();
     footer.innerHTML = await Footer();
+    loadingUp.innerHTML=await render();
+    loadingDown.innerHTML=await render();
 }
 export default router;
