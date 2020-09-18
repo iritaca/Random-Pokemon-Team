@@ -11,40 +11,65 @@ const Home = async () => {
     const pokemon6 = await generarTeam();
     const view =`
         <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-                <h2>${pokemon.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon.id}</h2>
+                    <h2>Name: ${pokemon.name}</h2>
+                    <h2>Type: ${pokemon.types[0].type.name}</h2>
                 </div>
             </article>
-        </div>
-        <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon2.sprites.front_default}" alt="${pokemon2.name}">
-                <h2>${pokemon2.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon2.sprites.front_default}" alt="${pokemon2.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon2.id}</h2>
+                    <h2>Name: ${pokemon2.name}</h2>
+                    <h2>Type: ${pokemon2.types[0].type.name}</h2>
+                </div>
             </article>
-        </div>
-        <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon3.sprites.front_default}" alt="${pokemon3.name}">
-                <h2>${pokemon3.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon3.sprites.front_default}" alt="${pokemon3.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon3.id}</h2>
+                    <h2>Name: ${pokemon3.name}</h2>
+                    <h2>Type: ${pokemon3.types[0].type.name}</h2>
+                </div>
             </article>
-        </div>
-        <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon4.sprites.front_default}" alt="${pokemon4.name}">
-                <h2>${pokemon4.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon4.sprites.front_default}" alt="${pokemon4.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon4.id}</h2>
+                    <h2>Name: ${pokemon4.name}</h2>
+                    <h2>Type: ${pokemon4.types[0].type.name}</h2>
+                </div>
             </article>
-        </div>
-        <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon5.sprites.front_default}" alt="${pokemon5.name}">
-                <h2>${pokemon5.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon5.sprites.front_default}" alt="${pokemon5.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon5.id}</h2>
+                    <h2>Name: ${pokemon5.name}</h2>
+                    <h2>Type: ${pokemon5.types[0].type.name}</h2>
+                </div>
             </article>
-        </div>
-        <div class="Characters">
-            <article class ="Characters-item">
-                <img src="${pokemon6.sprites.front_default}" alt="${pokemon6.name}">
-                <h2>${pokemon6.name}</h2>
+            <article class ="Character-item">
+                <figure class="Character-imgContainer">
+                    <img src="${pokemon6.sprites.front_default}" alt="${pokemon6.name}">
+                </figure>
+                <div class="Character-details">
+                    <h2>Pokemon id: ${pokemon6.id}</h2>
+                    <h2>Name: ${pokemon6.name}</h2>
+                    <h2>Type: ${pokemon6.types[0].type.name}</h2>
+                </div>
             </article>
         </div>
         `;
