@@ -202,5 +202,24 @@ body{
     }
 }
 @media screen and (max-width:420px){
-    
+    .loading{
+        height: calc(3 * 210px);
+    }
+    .Character-item{
+        height:210px
+    }
+    .Character-imgContainer{
+        height:200px;
+    }
+}
+@media screen and (max-width:320px){
+    .Header-logo a{
+        font-size:0.8em;
+    }
+    .Character-item{
+        height:150px
+    }
+    .Character-imgContainer{
+        height: 150px;
+    }
 }
