@@ -104,9 +104,16 @@ body{
 
 }
 @media screen and (max-width:1280px){
+    .main{
+        width:100%;
+        margin:0 auto;
+    }
+    .content.up{
+        grid-template-columns: repeat(3,33.33%);
+    }
     .content{
         height:270px;
-        width:800px;
+        width:100%;
     }
     .Characters{
         width:100%;
@@ -124,35 +131,76 @@ body{
     }
 }
 @media screen and (max-width: 1024px){
-    .Characters{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .Character-item{
-        width:300px;
-        height:300px;
-    }
+    
 }
 @media screen and (max-width: 768px){
     .main{
         grid-template-columns: minmax(auto,100%);
     }
+    .content.up{
+     justify-items: center;
+     height:280px;
+    }
+    .Character-item{
+        width:230px;
+        height: 230px;
+    }
 }
-@media screen and (max-width:632px){
+@media screen and (max-width:690px){
+    .main{
+        margin:0 auto
+    }
     .Header{
-        height:120px;
+        height:80px;
     }
     .Header-logo a{
         font-size:0.9em;
     }
-    .Characters{
+    .content.up{
         display:flex;
         flex-direction:column;
+        height:inherit;
+        align-items:baseline;
+        justify-content:space-around;
     }
     .loading{
-        height:100%;
+        height:900px;
+        width:90%;
+        margin:0 auto;
     }
     .Character-item{
-        width:280px;
-        height: 280px;
+        width:200px;
+        height: 300px;
+        box-shadow:none;
+        border-radius: 0px;
+        width:100%;
+        flex-direction: row;
+        padding:5px;
     }
+    .Character-item:hover{
+        box-shadow: none;
+    }
+    .Character-imgContainer{
+        width:50%;
+        height:280px;
+        box-shadow: inset -1px 1px 40px 0px  rgba(174, 195, 26, 0.6);
+        border-radius:50%;
+    }
+    .Character-imgContainer:hover{
+        box-shadow: inset -1px 1px 20px 0px  rgba(174, 195, 26, 0.6);
+    }
+    .Character-imgContainer img{
+        object-fit:cover;
+    }
+    .Character-details{
+        position: unset;
+        width:50%;
+        height:inherit;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:420px){
+    
 }
