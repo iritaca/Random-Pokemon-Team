@@ -22,5 +22,6 @@ const router = async () =>{
     footer.innerHTML = await Footer();
     loadingUp.innerHTML=await render();
     loadingDown.innerHTML=await render();
+    
 }
 export default router;
